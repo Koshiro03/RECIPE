@@ -28,6 +28,10 @@ router.get('/index', (req, res) => {
     res.render('index')
 });
 
+router.get('/index2', (req, res) => {
+    res.render('index2')
+});
+
 router.post('/create', [
     check('nombre').isLength({min:5}),
     check('email').isEmail(),
